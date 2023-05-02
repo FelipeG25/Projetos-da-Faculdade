@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Site da Ford GT">
+	<meta name="keywords" content="Ford, Ford GT, Carros Esportivos, Carros de 2021">
+	<meta name="author" content="Felipe Goulart">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../../Css/site.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+	<script src="../../Js/site.js"></script>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+	<title>Ford GT</title>
+</head>
+
+<body>
+	<header></header>
+	<nav></nav>
+	<section style="background-image: unset;" class="formulario">
+		<div class="inscricaoFaClube">
+			<div class="topoInscricao">
+				<h2>Inscrição para o Fã-Clube</h2>
+				<form name="frmInscricao" method="POST" action="#" id="idFormulario" onsubmit="validaInscricao()">
+					<fieldset class="inscricao">
+						<legend>Dados pessoais:</legend>
+						<label for="nome">Nome: </label>
+						<input placeholder="Nome e Sobrenome" type="text" name="txtnome" id="nome">
+						<label for="fone">Telefone: </label>
+						<input placeholder="(DDD)0000-0000" type="text" name="txtfone" id="fone">
+						<label for="email">E-mail: </label>
+						<input placeholder="abcde.123@gmail/hotmail.com/br" type="email" name="txtemail" id="email">
+						<label for="data">Data de Nascimento: </label>
+						<input placeholder="Dia/Mês/Ano" type="text" name="txtdata" id="data">
+						<label for="sexo">Sexo: </label>
+						<br>
+						<input type="radio" name="txtsexo" id="sexo" value="Masculino">
+						<label for="sexo">Masculino</label>
+						<br>
+						<input type="radio" name="txtsexo" id="sexo" value="Feminino">
+						<label for="sexo">Feminino</label>
+						<br>
+						<br>
+						<label for="participar">Deseja participar do Fã-Clube?</label>
+						<br>
+						<input type="checkbox" name="txtparticipar" id="participar" value="Sim">
+						<label for="participar">Sim</label>
+						<br>
+						<br>
+						<button type="reset">Limpar</button><button type="button" onclick="validarRadio()" onSubmit="validarCheckbox()">Enviar</button>
+						<!--<input type="button" value="Enviar" onclick="validarRadio()">-->
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</section>
+	<footer></footer>
+</body>
+
+</html>

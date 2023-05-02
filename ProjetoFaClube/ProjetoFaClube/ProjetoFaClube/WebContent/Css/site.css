@@ -1,0 +1,202 @@
+@charset "UTF-8";
+
+body {
+	margin: -16px auto;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+/*Cabeçalho*/
+header {
+	height: 130px;
+	background-color: #910000;
+}
+header img {
+	float: left;
+	height: 100px;
+	width: 300px;
+	margin: 20px 0 0 12px;
+}
+ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+ul li{
+	list-style: none;
+	margin-left: 1px;
+	padding: 36px;
+}
+ul li a{
+	text-decoration: none;
+	padding: 6px 15px;
+	color: #ffffff;
+}
+header h1{
+	float: left;
+	margin: 27px 0 0 30px;
+	font-size: 60px;
+	color: #ffffff;
+}
+
+/*Rodapé*/
+footer{
+	background-color: #910000;
+	color: #ffffff;
+	text-align: center;
+	padding: 10px;
+}
+/*Section da tela de início*/
+section{
+	clear: both;
+	width: 100%;
+	margin-top: 0px;
+	background: url("../Imagens/Carro\ 1.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-y: -150px;
+}
+
+/*Configuração da página inicial*/
+section #topo{
+	width: 100%;
+	height: 489px;
+	display: flex;
+	flex-direction: column;
+	color: white;
+	text-shadow: #000000 3px 3px;
+}
+h2{
+	text-align: center;
+	font-size: 50px;
+}
+h3{
+	text-align: center;
+	font-size: 20px;
+}
+section p {
+	clear: both;
+	text-align: center;
+	margin: 140px 80px;
+	color:#ffffff;
+}
+
+/*Section da tela de conteúdos do carro*/
+section .conteudoSection{
+	width: 100%;
+	clear: both;
+	min-height: 800px;
+	margin-top: 0px;
+	background-image: url("../Imagens/Fundo\ Conteúdo.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-y: 0px;
+}
+
+/*Configuração da página de conteúdos do carro*/
+.conteudo p{
+	clear: both;
+	text-align: center;
+	color:#ffffff;
+	margin: 10px;
+	text-shadow: #000000 3px 3px;
+	text-align: justify;
+}
+.texto{
+	width: 50%;
+	background: #464747;
+	margin: 0 auto;
+	min-width: 900px;
+	opacity: 0.9;
+}
+.topoConteudo{
+	width: 100%;
+	height: 499px;
+	display: flex;
+	flex-direction: column;
+	color: white;
+	text-shadow: #000000 3px 3px;
+	margin-bottom: 35%;
+}
+.tituloConteudo{
+	color: #ffffff;
+	text-shadow: #910000 3px 3px;
+}
+.paragrafo, .paragrafo2, .paragrafo3, .paragrafo4, .paragrafo5{
+	margin-top: 20px !important;
+}
+.siteFord{
+text-shadow: none;
+text-decoration: none;
+color: #a9c2ff;
+}
+.siteFord:hover{
+	color: deepskyblue;
+}
+.fichaTecnica{
+	margin: 10px auto;
+	text-align: center;
+}
+.tituloTabela{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+	padding: 5px;
+	border: transparent;
+}
+tr, td, th{
+    border: 1px solid #ffffff;
+    padding: 5px;
+}
+tr, td{
+    font-size: 14px;
+}
+.corpoTabela{
+	text-shadow: none;
+}
+
+/*Section da tela inscrição do fã-clube*/
+section .inscricaoFaClube{
+	width: 100%;
+	clear: both;
+	min-height: 499px;
+	margin-top: 0px;
+	background-image: url("../Imagens/Carro\ 2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-y: -100px;	
+}
+
+/*Configuração da página de inscrição do fã-clube*/
+.inscricao{
+	width: 300px;
+	margin: 0px auto;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.inscricao input{
+	margin: 5px auto;
+	width: 100%;	
+	padding: 5px 0;
+}
+#sexo{
+	width: 10%;
+}
+.topoInscricao{
+		width: 100%;
+		height: 600px;
+		display: flex;
+		flex-direction: column;
+		color: white;
+		text-shadow: #000000 3px 3px;
+}
+#participar{
+	width: 10%;
+}
+.inscricao button{
+	width: 30%;
+	margin: 0px 30px;
+	background-color: #910000;
+	color: #ffffff;
+	font-size: 16px;
+}
