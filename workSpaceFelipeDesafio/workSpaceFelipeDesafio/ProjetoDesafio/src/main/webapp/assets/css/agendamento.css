@@ -1,0 +1,63 @@
+.formulario {
+    width: 500px;
+    height: 45vh;
+    overflow: hidden;
+    margin: auto;
+    background: #fff;
+    box-shadow: 1px 1px 1.2px 5px #e3e3e3;
+    border-radius: 10px;
+    padding: 1em;
+    margin-top: 5vh;
+    align-self: center;
+}
+
+.tituloAgendamento {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 3vh;
+}
+
+.formulario label {
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.formulario label span {
+    font-size: 1em;
+    color: #000000;
+    float: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: 'open_sansregular';
+}
+
+.formulario .campo {
+    font-size: 0.9em;
+    color: #555;
+    font-family: 'open_sansregular';
+    outline: none;
+    border: 1px #dee5ed solid;
+    border-radius: 4px;
+    padding: 0.5em 0.7em;
+    transition: s;
+    margin-left: 8;
+    margin-bottom: 10;
+}
+
+.formulario .campo:focus {
+    box-shadow: 0 0 5px 0px rgb(178, 216, 231);
+    border: 1px rgb(37, 174, 230) solid;
+    color: rgb(37, 174, 230);
+}
+
+.corpo{
+    padding-bottom: 70px;
+}
+
+.modalEditar{
+	display: none;
+	
+}

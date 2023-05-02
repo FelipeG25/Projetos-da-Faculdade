@@ -1,0 +1,111 @@
+body {
+    margin: 0 auto;
+    font-family: 'Source Sans Pro', sans-serif;
+    
+}
+
+.titulo{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    color: #F0FFFF !important;
+}
+
+.opcoesNav{
+    color: #F0FFFF !important;
+    font-size: 20px;
+}
+
+.footer{
+    height: 7vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 18px;
+    color: #F0FFFF !important;
+}
+
+.btn{
+    background: #EE82EE !important;
+}
+
+/*Tabela de Agendamento */
+.frmEditar {
+	margin-bottom: 10px;
+}
+
+.frmEditar table{
+	border: 1px solid #000;
+	border-collapse: collapse;
+	margin: 0 auto;
+	min-width: 50%;
+}
+
+.frmEditar table th{
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+	padding: 0 px;
+	border: transparent;
+}
+
+.frmEditar tr, .frmEditar td, .frmEditar th{
+	border: 1px solid #B0C4DE;
+	padding: 0px 5px;
+}
+
+.frmEditar tr, .frmEditar td{
+	font-size: 50px;
+}
+
+.frmEditar tr:nth-child(even){
+	background-color: #b1ccf5;
+}
+
+.frmEditar tr:nth-child(odd){
+	background-color: #83afd3;
+}
+
+.frmEditar, .acoes{
+	width: 70px;
+}
+
+.frmEditar table img{
+	padding: 0 px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+.tabelaJS{
+    height: 10vh;
+    overflow: hidden;
+    margin: auto;
+    background: #fff;
+    box-shadow: 1px 1px 1.2px 5px #e3e3e3;
+    border-radius: 10px;
+    padding: 1em;
+    margin-top: 5vh;
+    align-self: center;
+}
+.tabelaGeral{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+h3{
+	text-align: center;
+	padding-top: 2vh;
+}
+
+img{
+	width: 41%;
+	margin: 2;
+	cursor: pointer;
+}

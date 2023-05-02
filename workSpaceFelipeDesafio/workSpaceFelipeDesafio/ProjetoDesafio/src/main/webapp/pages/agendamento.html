@@ -1,0 +1,113 @@
+<head>
+<meta charset="UTF-8">
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+<script src="/ProjetoDesafio/assets/js/jquery.mask.js"></script>
+<script src="/ProjetoDesafio/assets/js/agendamento.js"></script>
+<script src="/ProjetoDesafio/assets/js/admin.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/ProjetoDesafio/assets/js/jquery-ui.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" type="text/css" href="/ProjetoDesafio/assets/css/agendamento.css">
+<link rel="stylesheet" type="text/css" href="/ProjetoDesafio/assets/css/admin.css">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+	crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="/ProjetoDesafio/assets/css/jquery-ui.css">
+
+</head>
+
+<header>
+	<nav class="navbar navbar-expand-lg navbar-light "
+		style="background-color: #DDA0DD">
+		<div class="container-fluid">
+			<a class="navbar-brand tituloSite" href="../index.html">LuIsa</a>
+			<button class="navbar-toggler" type="button"
+				data-bs-toggle="collapse" data-bs-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="opcoesNav" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item"><a class="nav-link"
+						style="color: #F0FFFF;" href="agendamento.html">Agendamento</a></li>
+					<li class="nav-item"><a class="nav-link"
+						style="color: #F0FFFF;" href="#">Agenda</a></li>
+					<li class="nav-item"><a class="nav-link"
+						style="color: #F0FFFF;" href="#">Mural de Fotos</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</header>
+
+<main class="corpo">
+
+	<div class="tituloAgendamento">
+		<h1>Agende seu horário</h1>
+	</div>
+
+	<form name="frmCadastrar" id="addAgendamento" class="formulario">
+
+		<label> <span class="icon icon-phone">Telefone </span> <input
+			name="telefone" id="telefone" class="campo" type="text"
+			placeholder="(00) 0000-0000">
+
+		</label> <label> <span class="icon icon-whatsapp-1">Whatsapp </span> <input
+			name="whatsapp" id="whatsapp" class="campo" type="text"
+			placeholder="(00) 00000-0000">
+
+		</label> <label> <span class="icon icon-calendar">Data </span> <input
+			name="data" id="data" class="campo" type="date"
+			placeholder="00/00/0000">
+
+		</label> <label> <span class="icon icon-clock">Hora </span> <input
+			name="hora" id="hora" class="campo" type="time" placeholder="00:00">
+
+		</label>
+
+		<button type="button" class="btn text-black"
+			onclick="LUISA.agendamento.cadastrar()">Enviar</button>
+	</form>
+
+
+	<h3>Horários Agendados</h3>
+	<div id="listaAgendamento" class="listaRegistroAgenda"></div>
+	<div id="modalEditaAgenda" class="modalEditar">
+		<form name="frmEditaAgenda" id="editaAgenda" class="frmEditar">
+
+			<label>Telefone <input name="telefone" id="telefone2" class="campo" type="text"></label> 
+			
+			<label>Whatsapp <input name="whats" id="whatsapp2" class="campo" type="text"></label> 
+			
+			<label>Data	<input name="dataEscolhida" id="data2" class="campo" type="date"></label> 
+			
+			<label>Hora <input name="hora" id="hora2" class="campo" type="time"></label> 
+			
+			<input type="hidden" name="idAgenda">
+		</form>
+	</div>
+</main>
+
+<footer class="text-center text-white fixed-bottom"
+	style="background-color: #DDA0DD;">
+	<div class="footer">Copyright &copy; LuIsa 2022 - Felipe Goulart
+	</div>
+</footer>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+
+		LUISA.agendamento.dadosArmazenados();
+		$("#telefone").mask("99 9999-9999");
+		$("#whatsapp").mask("99 99999-9999");
+		$("#telefone2").mask("99 9999-9999");
+		$("#whatsapp2").mask("99 99999-9999");
+		// $("#data").mask("99/99/9999");
+		// $("#hora").mask("99:99");
+
+	});
+</script>
