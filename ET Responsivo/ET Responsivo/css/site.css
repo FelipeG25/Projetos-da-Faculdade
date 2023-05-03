@@ -1,0 +1,147 @@
+@charset "UTF-8";
+body {
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* ---------------- COMEÇO DO HEADER ---------------- */
+
+header {
+    background-color: #f7f7f7;
+    height: 12vh;
+}
+
+.logo img {
+    height: 70px;
+    float: left;
+    width: 80px;
+    margin-left: 150px;
+    transition: all 0.5s;
+    margin-top: 3px;
+}
+
+.logo img:hover {
+    -webkit-transform: scale(1.11);
+    transform: scale(1.11);
+}
+
+.menu {
+    float: right;
+    margin-top: 12px;
+    font-size: 18px;
+}
+
+.menu a.entrar {
+    color: #ffffff;
+    background-color: #00cc66;
+    padding: 15px 25px;
+    border-radius: 10px;
+}
+
+.menu a.entrar:hover {
+    color: #ffffff;
+    background-color: orangered;
+    transition: 0.5s;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.menu a:hover {
+    color: #00cc66;
+    transition: 0.3s;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu li {
+    float: left;
+    margin-right: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+}
+
+.barras {
+    opacity: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .barras {
+        color: #222121;
+        opacity: 1;
+        position: absolute;
+        top: 22px;
+        right: 20px;
+        font-size: 2rem;
+    }
+}
+
+
+/* ---------------- FIM DO HEADER ---------------- */
+
+
+/* ---------------- COMEÇO DO SECTION ----------------*/
+
+section {
+    height: 88vh;
+}
+
+.controlador {
+    clear: both;
+    height: 88vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.texto {
+    max-width: 490px;
+    line-height: 35px;
+    float: left;
+    align-self: center;
+}
+
+.texto h1 {
+    color: #00cc66;
+    font-size: 60px;
+}
+
+.texto h2 {
+    color: #000000;
+    font-size: 60px;
+}
+
+.texto p {
+    color: #000000;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.texto button {
+    color: #ffffff;
+    background-color: #00cc66;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 35px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.texto button:hover {
+    background-color: orangered;
+    transition: 0.5s;
+}
+
+.imagemCentral {
+    height: 250px;
+    float: right;
+    align-self: center;
+}
